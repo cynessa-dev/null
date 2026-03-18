@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c20p0vydhdbnp"]
+
+[ext_resource type="PackedScene" uid="uid://cgnrqgmwt5e7q" path="res://scenes/MemoryGrid.tscn" id="1_elqb8"]
+
+[node name="Main" type="Node2D" unique_id=1839182436]
+
+[node name="MemoryGrid" parent="." unique_id=1518269039 instance=ExtResource("1_elqb8")]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
