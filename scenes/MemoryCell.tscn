@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://de38q3jfltuwb"]
+
+[ext_resource type="Script" uid="uid://cqxlfkot88gju" path="res://scripts/MemoryCell.gd" id="1_dxgpb"]
+
+[node name="MemoryCell" type="ColorRect" unique_id=39033589]
+custom_minimum_size = Vector2(20, 20)
+script = ExtResource("1_dxgpb")
