@@ -9,14 +9,17 @@ script = ExtResource("1_mhefn")
 
 [node name="Body" type="ColorRect" parent="." unique_id=1765186249]
 custom_minimum_size = Vector2(24, 24)
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 color = Color(0.9411765, 0.64705884, 0, 1)
 
 [node name="InteractionZone" type="Area2D" parent="." unique_id=1750986180]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=1184534135]
-scale = Vector2(20, 20)
+scale = Vector2(8, 8)
 shape = SubResource("CircleShape2D_mhefn")
 
 [connection signal="body_entered" from="InteractionZone" to="." method="_on_interaction_zone_body_entered"]
