@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cjb7g1ab5jg5l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5q5h1"]
+
+[node name="Player" type="CharacterBody2D" unique_id=32218974]
+
+[node name="Collider" type="CollisionShape2D" parent="." unique_id=203400123]
+scale = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_5q5h1")
+
+[node name="Body" type="ColorRect" parent="." unique_id=99863687]
+custom_minimum_size = Vector2(16, 16)
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
