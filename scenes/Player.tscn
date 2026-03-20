@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cjb7g1ab5jg5l"]
 
+[ext_resource type="Script" uid="uid://besdvn2wemr2t" path="res://scripts/Player.gd" id="1_p0vlq"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5q5h1"]
 
 [node name="Player" type="CharacterBody2D" unique_id=32218974]
+script = ExtResource("1_p0vlq")
 
 [node name="Collider" type="CollisionShape2D" parent="." unique_id=203400123]
 scale = Vector2(8, 8)
