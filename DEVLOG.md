@@ -21,13 +21,13 @@ Out of all the Game Engines out there, why Godot? To be frank, it was the best o
 
 All I did was developing the first core mechanic of the game. Since the theme of this game is `Memory Leak`, I remembered myself XD. Thoughts and ideas quickly slip away my brain, that's why I write this kind of things, to help me remember. Anyway, the story of the game will be like this:
 
-	You're a programmer that was diagnosed with **early-onset amnesia** who discovers that your consciousness has been *secretly* uploaded to an old, deteriorating computer system. The cruel part, the computer has a memory leak. The world around you corrupts, disappears, and glitches... just like you real memories did. Now you have to make a choice, to save this world or to return to yours. Remember: all actions has consequences.
+You're a programmer that was diagnosed with **early-onset amnesia** who discovers that your consciousness has been *secretly* uploaded to an old, deteriorating computer system. The cruel part, the computer has a memory leak. The world around you corrupts, disappears, and glitches... just like you real memories did. Now you have to make a choice, to save this world or to return to yours. Remember: all actions has consequences.
 
 And that's pretty much the story behind it. I simply developed a Memory Grid. There are 3 parts of it:
 	
-	- Memory Cell
-	- Memory Grid
-	- Memory Manager
+- Memory Cell
+- Memory Grid
+- Memory Manager
 	
 To put it simply, 
 The **Memory Manager** is the one responsible for overseeing the Memory Grid, and allocates Memory Cell of different types into it. 
