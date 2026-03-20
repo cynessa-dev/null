@@ -1,11 +1,33 @@
 [gd_scene format=3 uid="uid://c20p0vydhdbnp"]
 
 [ext_resource type="PackedScene" uid="uid://cgnrqgmwt5e7q" path="res://scenes/MemoryGrid.tscn" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://cjb7g1ab5jg5l" path="res://scenes/Player.tscn" id="2_rvslj"]
+[ext_resource type="PackedScene" uid="uid://cdjsnw4kggpkk" path="res://scenes/NPC.tscn" id="3_0bbpv"]
 
 [node name="Main" type="Node2D" unique_id=1839182436]
+
+[node name="Room" type="ColorRect" parent="." unique_id=1914870291]
+offset_right = 480.0
+offset_bottom = 270.0
+color = Color(0.050980393, 0.050980393, 0.101960786, 1)
 
 [node name="MemoryGrid" parent="." unique_id=1518269039 instance=ExtResource("1_elqb8")]
 offset_left = 20.0
 offset_top = 20.0
 offset_right = 20.0
 offset_bottom = 20.0
+
+[node name="Player" parent="." unique_id=32218974 instance=ExtResource("2_rvslj")]
+position = Vector2(240, 135)
+
+[node name="Polaris" parent="." unique_id=875238858 instance=ExtResource("3_0bbpv")]
+position = Vector2(69, 155)
+npc_name = "Polaris"
+cell_index = 20
+dialogue_lines = Array[String](["I wonder how much longer I have.", "You feel it too, don't you? The slipping."])
+
+[node name="Chano" parent="." unique_id=1208404896 instance=ExtResource("3_0bbpv")]
+position = Vector2(407, 145)
+npc_name = "Chano"
+cell_index = 10
+dialogue_lines = Array[String](["Hey. You look like you're forgetting something.", "Don't forget me. Please."])
