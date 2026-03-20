@@ -30,3 +30,15 @@ func _fade_out() -> void:
 	var tween := create_tween()
 	tween.tween_property(self, "modulate:a", 0.0, 1.5)
 	tween.tween_callback(queue_free)
+
+# ===============
+# SIGNALS
+# ===============
+
+func _on_interaction_zone_body_entered(body: Node2D) -> void:
+	if body.has_method("set_nearby_npc"):
+		body.set_nearby_npc(self)
+
+func _on_interaction_zone_body_exited(body: Node2D) -> void:
+	if body.has_method("set_nearby_npc"):
+		body.clear_nearby_npc();
