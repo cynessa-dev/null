@@ -39,3 +39,7 @@ The **Memory Cell** is the *currency* of this world, you need to unlock NPCs, sk
 ### The Mechanic
 
 The Memory cell leaks every 60 seconds leading to corruption. It might change in the future, but that's that for now. I set the MemoryManager to autoload, since most of the modules will use it in the future. All the visual stuffs are temporary for now. The Memory Cell can't do much in this version, but that ends for today's goal.
+
+### The Goal
+
+The goal of developing this project is mostly for educational purposes. Just to enhance my Game Development skills, and use this chance to explore other fields, like arts, musics, and human interaction. The human interaction part is much more important, it will help me be able to design things with intent and context much more better, if I understand human emotions more.
