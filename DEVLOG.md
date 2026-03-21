@@ -8,6 +8,24 @@
 
 Hello, this is Christian! This file is similar to a diary that I usually keep around, and will serve as a learning hub for those who are interested. You will information on how and why I developed this game, and what are the reasons behind developing certain codes. The project overview can be found on the `README.md`. Without further ado, let's get to it!
 
+## DAY 03 | The Skills [March 21, 2026]
+
+### The Dash
+
+The game will act like an Role-Playing Game (RPG), and with that, I would like to set creative challenges for the player to handle. I developed **only 1 skill** for this prototype to test the mechanics out. The Dash skill. We all know it, so I don't really need to get into much detail about it. Basically, it's tied to one of the Memory Cells, similar to NPCs. Furthermore, when a cell gets corrupted, the skills vanish, and player won't be able to use it. It gives more **importance** to the Memory Cell, forcing the player to watch over it.
+
+### How I did It
+
+Well, since this is a material for learning, I guess I still have to tell how I did the Dash Skill. Basically, it just increase speed dramatically for a short period of time.
+
+In the tecnical side, the `Player.gd` has a variable called `velocity`, which controls how fast and where the player is going. It is inside a function called `_handle_movement()` that checks first if the player `is_dashing`. If it is true, then the script will opt to using the `DASH_SPEED`, with the value of `400.0`. And if it is false, then the script will use the default `SPEED`, which is `120.0`.
+
+There's, of course, a timer for it. When the timer expires, it sets `is_dashing` to false, and tells the script to flip back to the default `SPEED`. It's really that simple. Additionally, I added a little visual feedback to be able to tell when the character is dashing. Just changing the color of the character's body is enough.
+
+### The Direction of the Project
+
+Ge-Mu: Null may take different forms in the future, but mainly it will be an RPG. With this much features, my brain has been thinking of different mechanics for the game! XD. But, before anything else, **the prototype must be finished first**. All the features right now are just out of context. To simply put it, they are just for testing purposes. NPCs are randomly placed, the skills are not useful. All of this will be just used for making the **core gameplay** work.
+
 ## DAY 02 | The NPCs [March 20, 2026]
 
 ### The Non-Playable Characters
