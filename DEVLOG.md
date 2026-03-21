@@ -8,6 +8,26 @@
 
 Hello, this is Christian! This file is similar to a diary that I usually keep around, and will serve as a learning hub for those who are interested. You will information on how and why I developed this game, and what are the reasons behind developing certain codes. The project overview can be found on the `README.md`. Without further ado, let's get to it!
 
+## DAY 02 | The NPCs [March 20, 2026]
+
+### The Non-Playable Characters
+
+First of all, this is still *experimental*. There is no asset nor proper dialogue for the NPCs. Right now, the goal is to develop the mechanic to see whether this game will work out or not. Currently, there are 2 NPCs; namely **Chano, and Polaris**. They are just names I came up with on the spot, and their sprites are just squares with solid color (amber) to distinguish between player and NPCs.
+
+### What is the Goal?
+
+The goal here to tie them up with the Memory Cells, so each NPC's should have at least **1 cell**. If that cell gets corrupted, they will vanish, **forever**. The key here is to assign each NPC, what cells they are. I exposed the variable for configuration to set the cell index and use it to reference with the `MemoryManager.gd` to counter check which cell has been corrupted.
+
+### How does it Work?
+
+Since all NPCs, have a cell index, we counter check it using signals from the `MemoryManager.gd`. Everytime a cell gets corrupted, the `MemoryManager.gd` will fire a **fire** a signal saying *"Hey, cell N just get corrupted!"*, then the `NPC.gd`, which is the script for the NPCs, listens to that signal and match the cell index to the NPC's cell index. If it matched, the NPC will vanish and be removed from the scene.
+
+I did it this way to learn more about **Human Emotion**. As I have stated in my goals for this project, I plan to learn more about Human Interaction. Using this chance to try things out with the question of *"How will the user react if I did this?"* or *"What will the user do when presented by this?"* Starting with the NPCs, I plan to develop NPCs that will connect with the user and see what they are in a situation, or when they to take action.
+
+### Today's Work
+
+Today, the development of the NPCs core mechanics is successful, although the *emotion* is not yet there since they are not polished yet. I believe that I can test things out when the assets are ready! Well, see yah again soon!
+
 ## DAY 01 | The Start of a Long Journey [March 18, 2026]
 
 ### Hello, World
